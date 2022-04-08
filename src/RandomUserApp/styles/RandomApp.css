@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container{
+  width: 70%;
+  display: flex ;
+  block-size: auto;
+}
+
+#welcome-message{
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+}
+
+button{
+  padding: 15px;
+  width: 20%;
+  margin: auto;
+  border:1px solid lightgray;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  margin: 0px 0px 30px 10px;
+}
+
+input{
+  padding: 15px;
+  width: 75%;
+  margin: auto;
+  border:1px solid lightgray;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  margin: 0px 0px 30px 0px; 
+}
+
+.below-input-box{
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 5px;
+  background: rgba(243, 243, 243, 0.973);
+}
+
+.head-text{
+  font-size: 1.6em;
+}
+
+.user-name{
+  font-weight: bold;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 4px solid rgb(52, 33, 138);
+  border-radius: 100%;
+}
+
+.img-prof{
+  margin: 0px 0px 50px 0px; 
+}
+
+.user-details{
+padding: 10px;
+margin: 0px 0px 10px 0px;
+line-height: 1.0;
+}
+
+@media (max-width: 460px) {
+  .container {
+      margin:0
+  }
+  .head-text{
+      font-size: 1.3rem;
+  }
+  img {
+      max-width: 80%;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+    }
+}
+
