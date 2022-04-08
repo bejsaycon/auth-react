@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.container {
+
+.container-app {
   max-width: 600px;
   margin: 40px auto;
   width: 80%;
@@ -28,6 +30,7 @@ body {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 section {
   width: 100%;
   max-width: 420px;
@@ -35,16 +38,37 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   padding: 1rem;
   background-color: rgba(0,0,0,0.4);
 }
+section p{
+  font-size: 1.25em;
+  margin: 20px auto;
+}
 
 form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex-grow: 1;
   padding-bottom: 1rem;
+  width: 70%;
+  block-size: auto;
+  align-items: center;
+}
+form h2{
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+form label{
+  margin-left: 3rem;
+  align-self: flex-start;
+  line-height: 1.3;
+  font-size: 1.75rem;
 }
 
 #welcome-message{
@@ -52,29 +76,18 @@ form {
   text-align: center;
   line-height: 1.3;
 }
+
 input[type="text"],
-input[type="password"],
-button{
-  font-size: 22px;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
+input[type="password"] {
+  padding: 0.25em;
+  border-radius: 0.5em;
 }
-label,
-button {
+label{
   margin-top: 1rem;
 }
 
-button {
-  padding: 0.5rem;
+form button {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 10px auto;
 }
-.below-input-box{
-  width: 70%;
-  margin: auto;
-  padding: 40px;
-  border-radius: 5px;
-  background: rgba(243, 243, 243, 0.973);
-}
-.head-text{
-  font-size: 1.6em;
-}
-

@@ -48,7 +48,7 @@ const Register = () => {
       ) : (
         <section>
           <p className={errMsg ? "errmsg" : "offscreen"}>{errMsg}</p>
-          <form className="form-container" onSubmit={handleRegistration}>
+          <form onSubmit={handleRegistration}>
             <h2>Register</h2>
             <label>username</label>
             <input

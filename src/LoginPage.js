@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import useAuth from "./RandomUserApp/custom_hooks/useAuth";
 
 const LoginPage = () => {
+  const {setAuth} = useAuth();
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState("");
 
@@ -17,9 +19,8 @@ const LoginPage = () => {
       body: JSON.stringify(userLoginData),
     })
       .then((data) => {
-        console.log(typeof data.status);
-        console.log(data);
         if (data.status === 200) {
+          setAuth(true);
           setSuccess(true);
         } else if (data.status === 400) {
           setErrMsg("Cannot Find User");
@@ -44,7 +45,7 @@ const LoginPage = () => {
           <h1>You are logged in!</h1>
           <br />
           <p>
-            <Link to="/">
+            <Link to="/randomapp">
             Go to App
             </Link>
           </p>
@@ -52,7 +53,7 @@ const LoginPage = () => {
       ) : (
         <section>
           <p className={errMsg ? "errmsg" : "offscreen"}>{errMsg}</p>
-          <form className="form-container" onSubmit={handleLogin}>
+          <form onSubmit={handleLogin}>
             <h2>Login</h2>
             <label>username</label>
             <input type="text" name="username" required />
