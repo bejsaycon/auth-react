@@ -8,7 +8,6 @@ function Home() {
     <div className="below-input-box head-text" id="welcome-message">
       Welcome to Random user Generator. <Link to='/login'>Login</Link> to Proceed
     </div>
-  
   );
 }
 
