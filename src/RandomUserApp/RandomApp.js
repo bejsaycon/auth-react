@@ -26,7 +26,6 @@ function RandomApp() {
     },
     [data],
   )
-  
   return (
     <div className="container">
       <InputForm handleSubmit={handleSubmit}/>
